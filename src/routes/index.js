@@ -1,5 +1,6 @@
 const express = require('express');
 const taskRoute = require('./task.route');
+const newsRoute = require('./news.route');
 
 const router = express.Router();
 
@@ -8,5 +9,6 @@ router.get('/health', (req, res) => {
 });
 
 router.use('/tasks', taskRoute);
+router.use('/news', newsRoute);
 
 module.exports = router;

@@ -7,6 +7,7 @@ A clean, production-grade Express & Mongoose REST API for Tasks CRUD, built foll
 - **Full Tasks CRUD**: Create, read, update, delete tasks.
 - **Mark as Complete**: Dedicated toggle endpoint to easily complete/uncomplete tasks.
 - **Task Statistics**: Stats endpoint returning counts of total, completed, pending, and in-progress tasks, plus completion rate.
+- **Open News Feed API**: `GET /api/news` fetching real-time global news by category and search keyword with fallback resilience.
 - **Search & Filters**: Search tasks by title and description, filter by status or priority.
 - **Pagination & Sorting**: Support for pagination and dynamic sorting.
 - **Validation**: Strict request validation using Joi schemas.
@@ -23,6 +24,7 @@ A clean, production-grade Express & Mongoose REST API for Tasks CRUD, built foll
 - `PATCH /api/tasks/:taskId` - Update task by ID
 - `PATCH /api/tasks/:taskId/toggle-complete` - Toggle task completion status
 - `DELETE /api/tasks/:taskId` - Delete task by ID
+- `GET /api/news` - Fetch news from Open News API (query params: `category`, `search`, `limit`)
 
 ## Environment Variables
 
